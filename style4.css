@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400, 500, 600, 700;
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+.contain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  padding: 5% 5% 5% 5%;
+  box-sizing: border-box;
+  margin: 10% 15% 8% 15%;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./bg-intro-desktop.png);
+}
+.left{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5%;
+}
+h1 {
+  font-size: 35px;
+  padding-left: 25%;
+  padding-top: 30%;
+}
+.bottomleft {
+  padding-left: 25%;
+  font-size: 16px;
+}
+.right{
+  padding-right: 5%;
+}
+.topright{
+  padding: 2.5%;
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  border-radius: 10px;
+}
+.bottomright{
+  margin-top: 5%;
+  display: grid;
+  padding: 10% 5% 30% 5%;
+    background-color: white;
+    row-gap: 5%;
+    border-radius: 10px;
+}
+.bottomright1 {
+  padding: 2% 0% 2% 5%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.bottomright2 {
+  padding: 2% 0% 2% 10%;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.bottomright3 {
+  font-size: 12px;
+  text-align: center;
+  color: bisque;
+}
+
+@media screen and (max-width: 375px) {
+  body{
+    color: white;
+    font-family: 'Poppins'
+  }
+  .contain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 100vh;
+    row-gap: 0%;
+    padding: 0% 10% 0% 10%;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./bg-intro-mobile.png);
+    margin: 0%;
+  }
+  .left{
+    padding-top: 30%;
+    text-align: center;
+  }
+  h1{
+    font-size: 35px;
+    padding: 5%;
+  }
+  .bottomleft{
+    padding: 10%;
+    font-size: 16px;
+  }
+  .right{
+    margin: 0%;
+    padding-top: 70%;
+  }
+  .topright{
+    background-color: hsl(248, 32%, 49%);
+    padding: 10%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .bottomright{
+    display: grid;
+    margin-top: 10%;
+    padding: 10% 5% 70% 5%;
+    background-color: white;
+    row-gap: 10%;
+    border-radius: 10px;
+  }
+  .bottomright1{
+    padding: 5% 0% 5% 10%;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .bottomright2{
+    padding: 5% 0% 5% 10%;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: hsl(154, 59%, 51%);
+  }
+  .bottomright3{
+    font-size: 16px;
+    text-align: center;
+    color: rgba(182, 118, 111, 0.755);
+  }
+}
